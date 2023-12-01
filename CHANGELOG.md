@@ -1,3 +1,13 @@
+## 0.11.1 (unreleased)
+
+- Added binary installation for Arch Linux
+
+## 0.11.0 (2023-11-16)
+
+- Updated OR-Tools to 9.8
+- Dropped support for Ubuntu 18.04, Debian 10, and CentOS 8
+- Dropped support for Ruby < 3
+
 ## 0.10.1 (2023-03-20)
 
 - Added `domain` method to `SatIntVar`
