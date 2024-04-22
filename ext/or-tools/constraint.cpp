@@ -351,6 +351,11 @@ void init_constraint(Rice::Module& m) {
         self.AddAssumption(lit);
       })
     .define_method(
+      "export_to_file",
+      [](CpModelBuilder& self, const std::string& filename) {
+        return self.ExportToFile(filename);
+      })
+    .define_method(
       "add_assumptions",
       [](CpModelBuilder& self, std::vector<BoolVar> literals) {
         self.AddAssumptions(literals);
